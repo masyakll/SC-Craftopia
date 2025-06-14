@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAFTOPIA</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .container {
+            margin-top: 60px; 
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 20%; 
+            padding: 10px; 
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            width: 80%; 
+            height: auto;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #780000; 
+            color: white; 
+            border: none; 
+            padding: 10px 20px; 
+            font-size: 16px; 
+            cursor: pointer; 
+            border-radius: 5px; 
+            transition: background-color 0.3s ease-in-out; 
+        }
+
+        button:hover {
+            background-color: #fa1f1a; 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <nav>
+            <h1 class="logo">CRAFTOPIA</h1> 
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produk.html">Products</a></li>
+                <li><a href="pemesanan.html">Order</a></li>
+                <li><a href="./pengajuan.html">Submission</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="container">
+        <h2 style="color: #780000; text-align: center; font-size: 40px;">Product List</h2>
+        
+        <div class="product">
+            <div class="product-item">
+                <img src="images/songket_palembang.jpg" alt="Songket Palembang">
+                <h3>Songket Palembang</h3>
+                <p>Price: Rp600.000</p>
+                <p>Description: Luxurious handwoven songket fabric from Palembang, made with golden threads.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/gringsing_bali.jpg" alt="Gringsing Bali">
+                <h3>Gringsing Bali</h3>
+                <p>Price: Rp800.000</p>
+                <p>Description: Traditional double-ikat woven fabric from Bali, crafted with natural dyes.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/perak_celuk.jpg" alt="Perak Celuk">
+                <h3>Perak Celuk</h3>
+                <p>Price: Rp1.200.000</p>
+                <p>Description: Exquisite handcrafted silver jewelry from Celuk, Bali, known for intricate detailing.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/gerabah_kasongan.jpg" alt="Gerabah Kasongan">
+                <h3>Gerabah Kasongan</h3>
+                <p>Price: Rp300.000</p>
+                <p>Description: Handmade pottery from Kasongan, Yogyakarta, perfect for home decor.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/wayang_kulit.jpg" alt="Wayang Kulit Solo">
+                <h3>Wayang Kulit Solo</h3>
+                <p>Price: Rp750.000</p>
+                <p>Description: Traditional Javanese shadow puppet, handcrafted from buffalo leather.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/rotan_jepara.jpg" alt="Rotan Jepara">
+                <h3>Rotan Jepara</h3>
+                <p>Price: Rp900.000</p>
+                <p>Description: High-quality woven rattan furniture from Jepara, durable and stylish.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/topeng_cirebon.jpg" alt="Topeng Cirebon">
+                <h3>Topeng Cirebon</h3>
+                <p>Price: Rp400.000</p>
+                <p>Description: Hand-carved wooden mask from Cirebon, often used in traditional dances.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/ulos_batak.jpg" alt="Ulos Batak">
+                <h3>Ulos Batak</h3>
+                <p>Price: Rp550.000</p>
+                <p>Description: Woven Ulos fabric from North Sumatra, a symbol of Batak heritage.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/tas_sasak.jpg" alt="Tas Sasak Lombok">
+                <h3>Tas Sasak Lombok</h3>
+                <p>Price: Rp350.000</p>
+                <p>Description: Handmade woven bag from Lombok, featuring ethnic motifs and natural fibers.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/sandal_kulit.jpg" alt="Sandal Kulit Garut">
+                <h3>Sandal Kulit Garut</h3>
+                <p>Price: Rp250.000</p>
+                <p>Description: Premium leather sandals from Garut, known for their comfort and durability.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/patung_asmat.jpg" alt="Patung Asmat">
+                <h3>Patung Asmat</h3>
+                <p>Price: Rp1.000.000</p>
+                <p>Description: Unique wooden sculpture crafted by the Asmat tribe in Papua, rich in cultural meaning.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+            
+            <div class="product-item">
+                <img src="images/sasando_rote.jpg" alt="Sasando Rote">
+                <h3>Sasando Rote</h3>
+                <p>Price: Rp1.500.000</p>
+                <p>Description: Traditional harp-like musical instrument from Rote, NTT, with a distinct melodic sound.</p>
+                <button onclick="location.href='pemesanan.html'">Order Now</button>
+            </div>
+        </div>
+    </section>    
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product submission - CRAFTOPIA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #780606;
+            padding: 50px 0 64px; /* atas 50px, bawah 40px => jadi lebih tinggi */
+            color: white;
+            text-align: center;
+        }
+
+        .navbar nav {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px; /* jarak antara logo dan menu */
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .menu li a:hover {
+            text-decoration: underline;
+        }
+
+        .form-container {
+            max-width: 700px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #b02a29;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+        }
+
+        button {
+            background-color: #780606;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #a50e0e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <h1 class="logo">CRAFTOPIA</h1>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./produk.html">Products</a></li>
+                    <li><a href="./pemesanan.html">Order</a></li>
+                    <li><a href="./pengajuan.html">Submission</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="form-container">
+        <h2>Product Submission Form</h2>
+        <form action="#" method="post" enctype="multipart/form-data">
+            <label for="nama">Product Name:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="gambar">Product Picture: </label>
+            <input type="file" id="gambar" name="gambar" accept="image/*" required>
+
+            <label for="deskripsi">Product Description</label>
+            <textarea id="deskripsi" name="deskripsi" rows="4" required></textarea>
+
+            <label for="harga">Product Price(Rp)</label>
+            <input type="number" id="harga" name="harga" required>
+
+            <label for="kategori">Product Category</label>
+            <input type="text" id="kategori" name="kategori" required>
+
+            <label for="pengrajin">Name of the Craftsman / UMKM</label>
+            <input type="text" id="pengrajin" name="pengrajin" required>
+
+            <label for="kontak">Contact the Craftsman</label>
+            <input type="text" id="kontak" name="kontak" placeholder="Example: 0812xxxxxxx" required>
+
+            <button type="submit">Submit Product</button>
+        </form>
+    </div>
+</body>
+</html>

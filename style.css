@@ -1,0 +1,54 @@
+.navbar {
+    font-family: Georgia, serif;
+    background-color: #780000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 30px;
+    color: rgb(245, 245, 245);
+    margin: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0;
+}
+
+.menu li a {
+    font-family: 'Lucida Sans', sans-serif;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+    background-color: black;
+    color: whitesmoke;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: 
+        linear-gradient(rgba(183, 75, 3, 0.6), rgba(255, 255, 255, 0.6)), 
+        url('craft.jpg.jpeg') no-repeat center center fixed;
+    background-size: cover;
+}

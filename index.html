@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRAFTOPIA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .video-background {
+            position:relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #bg-video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .content {
+            position: absolute;
+            top: 55%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            width: 80%; 
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.5); 
+            padding: 20px;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        .content h1 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        main.container {
+            padding: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            text-align: center;
+            color: #b02a29;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        .product-items {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            width: 30%;
+            padding: 15px;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product-item ol, .product-item li {
+            list-style: none;
+            padding: 0;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            width: 300px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: #780606;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #ca0f14;
+        }
+
+        .product-list {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .product-list li {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info ol {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+
+        .contact-info p {
+            font-size: 16px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav>
+                <h1 class="logo">CRAFTOPIA</h1>
+                <ul class="menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./produk.html">Products</a></li>
+                    <li><a href="./pemesanan.html">Order</a></li>
+                    <li><a href="./pengajuan.html">Submission</a></li> 
+                    <!-- <li><a href="./keranjang.html">Keranjang</a></li> -->
+
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="images/craftopia.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="content">
+            <h1>Welcome to CRAFTOPIA</h1>
+            <p>
+                CRAFTOPIA is a distinguished Indonesian handicraft store dedicated to preserving and celebrating the rich heritage of traditional craftsmanship. We offer a diverse collection of handcrafted products, from intricately woven textiles and batik to beautifully carved wooden art and ceramics. Our mission is to blend cultural authenticity with contemporary aesthetics, ensuring that each piece reflects Indonesia’s artistic legacy. At CRAFTOPIA, we believe that traditional crafts are more than just decorative items—they are stories of heritage, skill, and passion. By supporting local artisans, we aim to empower communities and keep Indonesia’s timeless artistry alive.
+            </p>
+        </div>
+    </div>
+    
+    <main class="container">
+        <section>
+            <h2>Best Seller Collection</h2>
+            <div class="product-items">
+                <div class="product-item">
+                    <img src="images/gerabah_kasongan.jpg" alt="Handmade Batik">
+                    <h3>Gerabah Kasongan</h3>
+                    <ol>
+                        <li>Price: Rp300,000</li>
+                        <li>Description: Handmade pottery from Kasongan, Yogyakarta, perfect for home decor.</li>
+                    </ol>
+                    <button onclick="location.href='pemesanan.html'">Order Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/tas_sasak.jpg" alt="Wood Carving Art">
+                    <h3>Tas Sasak Lombok</h3>
+                    <ol>
+                        <li>Price: Rp350,000</li>
+                        <li>Description: Handmade woven bag from Lombok, featuring ethnic motifs and natural fibers.</li>
+                    </ol>
+                    <button onclick="location.href='pemesanan.html'">Order Now</button>
+                </div>
+                <div class="product-item">
+                    <img src="images/sasando_rote.jpg" alt="Ikat Woven Fabric">
+                    <h3>Sasando Rote</h3>
+                    <ol>
+                        <li>Price: Rp1,500,000</li>
+                        <li>Description: raditional harp-like musical instrument from Rote, NTT, with a distinct melodic sound.</li>
+                    </ol>
+                    <button onclick="location.href='pemesanan.html'">Order Now</button>
+                </div>
+            </div>
+        </section>        
+
+        <section>
+            <h2>Offline Store</h2>
+            <ul class="product-list">
+                <li>Jl. Merdeka No. 10, Central Jakarta, DKI Jakarta, Indonesia</li>
+                <li>Jl. Raya Cendana No. 23, Bandung, West Java, Indonesia</li>
+                <li>Jl. Kuningan No. 45, Surabaya, East Java, Indonesia</li>
+                <li>Jl. Sumber Rejeki No. 8, Yogyakarta, DIY, Indonesia</li>
+                <li>Jl. Pantai Indah No. 67, Bali, Indonesia</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact Us</h2>
+            <div class="contact-info">
+                <ol>
+                    <li><p>Email: nusantaracraft@gmail.com</p></li>
+                    <li><p>Phone: 0812-3456-7890</p></li>
+                </ol>
+            </div>
+        </section>        
+    </main>
+</body>
+</html>

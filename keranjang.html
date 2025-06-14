@@ -1,0 +1,43 @@
+<head>
+    <script>
+    // Ambil data dari localStorage
+    let keranjang = JSON.parse(localStorage.getItem("keranjang")) || [];
+
+    function tambahKeKeranjang(nama, harga) {
+        keranjang.push({ nama, harga });
+        localStorage.setItem("keranjang", JSON.stringify(keranjang));
+        alert(nama + " ditambahkan ke keranjang!");
+    }
+
+    function tampilkanKeranjang() {
+        const keranjangDiv = document.getElementById("daftarKeranjang");
+        keranjangDiv.innerHTML = "";
+        let total = 0;
+
+        keranjang.forEach((item, index) => {
+            total += item.harga;
+            keranjangDiv.innerHTML += `
+                <p>${item.nama} - Rp${item.harga.toLocaleString()}</p>
+            `;
+        });
+
+        keranjangDiv.innerHTML += `<hr><strong>Total: Rp${total.toLocaleString()}</strong>`;
+    }
+
+    function kosongkanKeranjang() {
+        keranjang = [];
+        localStorage.removeItem("keranjang");
+        tampilkanKeranjang();
+    }
+</script>
+
+</head>
+<h2>Keranjang Belanja</h2>
+<div id="daftarKeranjang"></div>
+<br>
+<button onclick="kosongkanKeranjang()">Kosongkan Keranjang</button>
+<a href="pemesanan.html"><button>Pesan Sekarang</button></a>
+
+<script>
+    tampilkanKeranjang();
+</script>
